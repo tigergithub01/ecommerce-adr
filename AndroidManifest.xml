@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecommerce"
+    android:versionCode="18"
+    android:versionName="1.18" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <!--
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- android:name="com.ecommerce.application.CrashApplication" -->
+    <application
+        android:name="com.ecommerce.application.CrashApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.ecommerce.activity.main.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.myincome.MyIncomeActivity"
+            android:label="@string/title_activity_my_income"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.earn.VipShareActivity"
+            android:label="@string/title_activity_vip_share" >
+        </activity>
+
+        <!-- qq share -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.ecommerce.activity.order.OrderManagerActivity"
+            android:label="@string/title_activity_order_list"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.personal.PersonalActivity"
+            android:label="@string/title_activity_personal" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.ModifyPasswordActivity"
+            android:label="@string/title_activity_modify_password" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.personal.MyInfoActivity"
+            android:label="@string/title_activity_my_info" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.personal.MyInfoBankCardActivity"
+            android:label="@string/title_activity_my_info_bank_card" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.personal.MyGroupActivity"
+            android:label="@string/title_activity_my_group" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.personal.MyQRCodeActivity"
+            android:label="@string/title_activity_my_qrcode" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.personal.FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.personal.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.product.ProductListActivity"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.PullToRefreshListActivity"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.PullToRefreshGridActivity"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.myincome.WithdrawCashActivity"
+            android:label="@string/title_activity_withdraw_cash" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.myincome.MyIncDetailActivity"
+            android:label="@string/title_activity_my_inc_detail" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.myincome.MyIncBillActivity"
+            android:label="@string/title_activity_my_inc_bill"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.myincome.MyIncBillDetailActivity"
+            android:label="@string/title_activity_my_inc_bill_detail" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.order.OrderGuideActivity"
+            android:label="@string/title_activity_order_guide" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.message.MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.product.ProductTypeActivity"
+            android:label="@string/title_activity_product_type" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.product.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:name="com.ecommerce.activity.DetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.message.MessageDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_message_detail" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.earn.EarnGuildDetailActivity"
+            android:label="@string/title_activity_earn_guild_detail" >
+        </activity>
+
+        <receiver
+            android:name="com.ecommerce.wxapi.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ecommerce.wxapi.WXPayEntryActivity"
+            android:exported="true"/>
+        
+        <activity
+            android:name="com.ecommerce.wxapi.PayActivity"
+            android:exported="true">
+            
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+            
+        	<intent-filter>
+                <data android:scheme="wx2bfbd48633b358a1"/>
+            </intent-filter>    
+        </activity>
+        
+        <activity
+            android:name="com.ecommerce.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.ecommerce.activity.HostActivity"
+            android:label="@string/title_activity_host" >
+        </activity>
+        <activity
+            android:name="com.ecommerce.activity.main.MainActivityTab"
+            android:label="@string/title_activity_main_tab" >
+        </activity>
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="ebusinessTest"
+        android:targetPackage="com.ecommerce" />
+
+</manifest>
