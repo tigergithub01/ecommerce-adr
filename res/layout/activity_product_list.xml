@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/top_bar_bg" >
+
+        <ImageView
+            android:id="@+id/iv_productlist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/page_back_selector" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_toRightOf="@id/iv_productlist_back"
+            android:background="@drawable/search_shape"
+            android:orientation="horizontal"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:background="@drawable/search" />
+
+            <EditText
+                android:id="@+id/product_item_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3.0dip"
+                android:background="@null"
+                android:hint="@string/product_list_search_hint_text"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@+id/tv_product_list_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5.0dip"
+                        android:drawableRight="@drawable/filter_icon_down"
+                        android:gravity="center"
+                        android:paddingBottom="15.0dip"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/product_list_default_category_text"
+                        android:textSize="@dimen/default_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/line_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@+id/tv_product_condition_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableRight="@drawable/filter_icon_down"
+                        android:gravity="center"
+                        android:paddingBottom="15.0dip"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/product_list_default_sort_text"
+                        android:textSize="@dimen/default_textsize" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/rl_product_list_content" 
+               >
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pullist_productlistView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:background="@color/white"
+                    android:divider="#19000000"
+                    android:dividerHeight="1dp"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:smoothScrollbar="true"
+                    android:focusable="true"
+                    ptr:ptrAnimationStyle="flip"
+                    ptr:ptrListViewExtrasEnabled="false"
+                    ptr:ptrMode="both"
+                    ptr:ptrScrollingWhileRefreshingEnabled="true"
+                    >
+                </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+                <requestFocus />
+
+                <include
+                    layout="@layout/include_loading_data"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/include_no_network"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/include_no_data"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@id/linear_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

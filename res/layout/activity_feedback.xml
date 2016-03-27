@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/line_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/yijianfankui_hight"
+                android:layout_marginTop="10.0dip" >
+
+                <EditText
+                    android:id="@+id/et_feedback_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_press"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="输入您的宝贵意见（必填）"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10.0dip"
+                    android:textColor="#ff333333" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/yijianfankui_lianxi_hight"
+                android:layout_marginBottom="25.0dip"
+                android:layout_marginTop="16.0dip" >
+
+                <EditText
+                    android:id="@+id/et_feedback_contact_method"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_press"
+                    android:ems="10"
+                    android:hint="输入您的邮箱或者电话..."
+                    android:inputType="text"
+                    android:textColor="#ff333333" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

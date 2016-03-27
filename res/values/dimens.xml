@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="title_size">8.0sp</dimen>
+    <dimen name="phone_width">270.0dip</dimen>
+    <dimen name="phone_height">60.0dip</dimen>
+    <dimen name="confirmation_width">160.0dip</dimen>
+    <dimen name="confirmation_height">43.0dip</dimen>
+    <dimen name="confirmation_image_width">110.0dip</dimen>
+    <dimen name="width">280.0dip</dimen>
+    <dimen name="addphoto_hight">80.0dip</dimen>
+    <dimen name="setting_imageview_left">190.0dip</dimen>
+    <dimen name="login_button_denglu_hight">45.0dip</dimen>
+    <dimen name="setting_layout_wideth">283.0dip</dimen>
+    <dimen name="addshanghu2_wideth">260.0dip</dimen>
+    <dimen name="yanzhengma_wideth">160.0dip</dimen>
+    <dimen name="jiesuan_kuan">210.0dip</dimen>
+    <dimen name="jiesuan_kuan2">196.0dip</dimen>
+    <dimen name="setting_hang_hight">42.0dip</dimen>
+    <dimen name="setting_button_hight">39.0dip</dimen>
+    <dimen name="dialog_content_size">8.0sp</dimen>
+    <dimen name="yijianfankui_wideth">280.0dip</dimen>
+    <dimen name="xiaoxizx_hight">380.0dip</dimen>
+    <dimen name="yijianfankui_hight">200.0dip</dimen>
+    <dimen name="yijianfankui_lianxi_wideth">280.0dip</dimen>
+    <dimen name="yijianfankui_lianxi_hight">39.0dip</dimen>
+    <dimen name="yijianfankui_button_wideth">280.0dip</dimen>
+    <dimen name="yijianfankui_button_hight">39.0dip</dimen>
+    <dimen name="goodname_tv">15.0sp</dimen>
+    <dimen name="goodprice_tv">20.0sp</dimen>
+    <dimen name="big">20.0sp</dimen>
+    <dimen name="small_better">12.0sp</dimen>
+    <dimen name="middle_small">15.0sp</dimen>
+    <dimen name="middle">18.0sp</dimen>
+    <dimen name="small">10.0sp</dimen>
+    <dimen name="stock_tv">10.0sp</dimen>
+    
+    <!-- pullToRefresh start -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">25dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">10dp</dimen>
+    <dimen name="header_footer_internal_padding">20dp</dimen>
+    <!-- pullToRefresh end -->
+    
+    <!-- personal center -->
+    <dimen name="personal_viewgroup_height">42.0dip</dimen>
+    
+    <!-- text size -->
+    <dimen name="default_textsize">15.0sp</dimen>
+    
+    <!-- wxpay -->
+    <dimen name="BasicTextSize">15dp</dimen>
+
+</resources>

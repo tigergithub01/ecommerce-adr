@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:gravity="center"
+            android:padding="20.0dip"
+            android:text="@string/exit_confirm_msg"
+            android:textColor="#ff000000"
+            android:textSize="22.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffdddddd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_exit_system_ok"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="3.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="@string/exit_ok"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="#ffdddddd" />
+
+            <Button
+                android:id="@+id/btn_exit_system_cancel"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="3.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="@string/exit_cancel"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

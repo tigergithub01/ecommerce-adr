@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tv_inc_withdraw_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="SO-20100605-00001"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_inc_withdraw_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_inc_withdraw_code"
+        android:gravity="right"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="未结算" />
+
+    <TextView
+        android:id="@+id/tv_inc_withdraw_apply_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_inc_withdraw_status"
+        android:gravity="left"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="2015-01-01 09:18:45" />
+
+    <TextView
+        android:id="@+id/tv_inc_withdraw_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_inc_withdraw_code"
+        android:layout_toRightOf="@id/tv_inc_withdraw_apply_date"
+        android:gravity="right"
+        android:padding="0.0dip"
+        android:text="50元" />
+
+</RelativeLayout>

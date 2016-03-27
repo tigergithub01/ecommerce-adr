@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0eff4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c7cc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/myinfo_bankcard_no_label"
+                    android:textSize="@dimen/middle" />
+
+                <EditText
+                    android:id="@+id/et_bankcard_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/edit_press"
+                    android:ems="10"
+                    android:hint="@string/myinfo_bankcard_no_hint_text"
+                    android:inputType="number"
+                    android:textColorHint="#ffd8d8d9"
+                    android:textSize="@dimen/default_textsize" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c7cc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/myinfo_bankcard_name_label"
+                    android:textSize="@dimen/middle" />
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/xiala"
+                    android:gravity="left|center"
+                    android:paddingLeft="10.0dip"
+                    android:textSize="@dimen/default_textsize" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c7cc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/myinfo_bankcard_branch_name_label"
+                    android:textSize="@dimen/middle" />
+
+                <EditText
+                    android:id="@+id/et_bank_branch_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/edit_press"
+                    android:ems="10"
+                    android:hint="@string/myinfo_bankcard_branch_hint_text"
+                    android:inputType="text"
+                    android:textColorHint="#ffd8d8d9"
+                    android:textSize="@dimen/default_textsize" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c7cc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/myinfo_bankcard_address_label"
+                    android:textSize="@dimen/middle" />
+
+                <EditText
+                    android:id="@+id/et_bank_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/edit_press"
+                    android:ems="10"
+                    android:hint="@string/myinfo_bankcard_address_hint_text"
+                    android:inputType="text"
+                    android:textColorHint="#ffd8d8d9"
+                    android:textSize="@dimen/default_textsize" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c7cc" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

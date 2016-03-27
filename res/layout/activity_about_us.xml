@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        
+
+        <RelativeLayout
+            android:id="@+id/rl_about_us_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+			
+            <TextView
+                android:id="@+id/tv_about_us_ver_label"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本号："/>
+            
+            <TextView
+                android:layout_toRightOf="@id/tv_about_us_ver_label"
+                android:id="@+id/tv_about_us_ver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0" />
+        </RelativeLayout>
+        
+        
+
+        <TextView
+            android:id="@+id/tv_about_us_contact_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_about_us_version"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/about_us_contact_info"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/tv_about_us_rights"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_about_us_contact_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/about_us_rights"
+            android:textSize="12sp" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

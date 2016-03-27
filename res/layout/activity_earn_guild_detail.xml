@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_earn_guild_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:visibility="gone" />
+
+        <WebView
+            android:layout_below="@id/tv_earn_guild_title"
+            android:id="@+id/wv_earn_guild_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include
+            layout="@layout/include_loading_data"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/include_no_network"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/include_no_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

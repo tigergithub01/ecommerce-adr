@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/sv_navigator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/ad_head" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ad_baseline" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rlt_vip_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_weight="1.0"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/main_earn_btn"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/title_activity_vip_share"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlt_goods_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_weight="1.0"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/main_product_btn"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/title_activity_product_list"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rlt_order_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_weight="1.0"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/main_order_btn"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:text="@string/title_activity_order_list"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlt_my_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_weight="1.0"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/main_income_btn"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:text="@string/title_activity_my_income"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+     <View
+        android:id="@+id/ll_main_devider"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" 
+        android:layout_alignParentBottom="true"/>
+     
+    <LinearLayout
+        android:id="@+id/ll_main_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:orientation="horizontal"
+        android:layout_above="@id/ll_main_devider" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_footer" />
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

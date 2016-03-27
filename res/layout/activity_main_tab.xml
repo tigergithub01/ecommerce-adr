@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_navigator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_navigator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/ad_head" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ad_baseline" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_main_product_list_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pullist_main_productlistView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:focusable="true"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="true" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <requestFocus />
+
+        <include
+            layout="@layout/include_loading_data"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/include_no_network"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/include_no_data"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/linear_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="15.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:background="@drawable/common_btn"
+        android:gravity="center_horizontal"
+        android:text="查看更多产品"
+        android:textColor="@color/white"
+        android:textSize="20.0sp" />
+
+    <!--
+         <View
+        android:id="@+id/ll_main_devider"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true" />
+    -->
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/ll_main_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_main_devider"
+        android:layout_below="@id/rl_main_product_list_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_footer" />
+    </LinearLayout>
+    -->
+
+
+</LinearLayout>

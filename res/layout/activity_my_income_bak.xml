@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RadioGroup
+        android:id="@+id/rg_my_income"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_income_person"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/detail_tab_selector"
+            android:textColor="@color/nav_tab_text_selector"
+            android:text="个人收入" />
+
+        <RadioButton
+            android:id="@+id/rb_income_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/detail_tab_selector"
+            android:textColor="@color/nav_tab_text_selector"
+            android:text="团队收入" />
+
+        <RadioButton
+            android:id="@+id/rb_income_feelist"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/detail_tab_selector"
+            android:textColor="@color/nav_tab_text_selector"
+            android:text="我的账单" />
+    </RadioGroup>
+        
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0" >
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager_my_income"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

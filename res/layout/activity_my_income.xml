@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_inc_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8.0dip"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8.0dip"
+                android:text="@string/my_inc_balance_text"
+                android:textColor="@color/my_inc_summary_color"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/line_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_inc_total_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8.0dip"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8.0dip"
+                android:text="@string/my_inc_total_text"
+                android:textColor="@color/my_inc_summary_color"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/line_bg" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@color/line_bg" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/line_bg" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:id="@+id/rl_inc_total_detail">
+
+            <TextView
+                android:id="@+id/tv_my_inc_all_income_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/my_inc_total_detail_text"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_my_inc_all_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_my_inc_all_income_label"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/common_right_selector"
+                android:gravity="center_vertical"
+                android:text="@string/my_inc_detail_text"
+                android:textSize="13sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/line_bg" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_inc_balance_detail_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/my_inc_balance_detail_text"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_my_inc_balance_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_inc_balance_detail_label"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="5.0dip"
+                android:paddingBottom="8.0dip"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/line_bg" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_inc_balance_can_withdraw_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/my_inc_balance_can_withdraw_text"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_my_inc_can_withdraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_inc_balance_can_withdraw_label"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="5.0dip"
+                android:paddingBottom="8.0dip"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_inc_settle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15.0dip"
+                android:background="@drawable/common_btn"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip"
+                android:text="@string/my_inc_settle_text"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/line_bg" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip" >
+
+            <TextView
+                android:id="@+id/tv_inc_bill_list"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/common_right_selector"
+                android:gravity="center_vertical"
+                android:text="@string/my_inc_bill_list"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/line_bg" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@color/line_bg" />
+
+</LinearLayout>

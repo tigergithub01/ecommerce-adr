@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tv_inc_det_order_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="SO-20100605-00001"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_inc_det_sub_vip_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_inc_det_order_code"
+        android:gravity="right"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="00000000000" />
+
+    <TextView
+        android:id="@+id/tv_inc_det_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_inc_det_order_code"
+        android:gravity="left"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="XXXXXXXXX" />
+
+    <TextView
+        android:id="@+id/tv_inc_det_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_inc_det_product_name"
+        android:gravity="left"
+        android:padding="0.0dip"
+        android:text="1000元" />
+
+</RelativeLayout>

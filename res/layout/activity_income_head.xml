@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:layout_gravity="center_horizontal" android:id="@id/money_text_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_shop_name" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="账户余额" />
+        </LinearLayout>
+        <View android:background="@color/line_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:layout_gravity="center_horizontal" android:id="@id/money_text_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_shop_name" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="累计收入" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="店铺累计收入" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/money_text_shoptotal_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="123456" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="O2O收银台累计收入" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/money_text_yutotal_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="分润累计收入" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/money_text_casetotal_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="12345" />
+        </LinearLayout>
+        <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/money_text_case" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="分润可结算金额" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/money_text_case_num" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="123" android:layout_below="@id/money_text_case" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/money_text_case_get" android:background="@drawable/select_red" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="结 算" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/money_text_commtotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="佣金累计收入" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/money_text_commtotal_num" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="123" android:layout_below="@id/money_text_commtotal" />
+        </RelativeLayout>
+        <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/money_text_comm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="佣金可结算金额" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/money_text_comm_num" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="1234" android:layout_below="@id/money_text_comm" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/money_text_comm_get" android:background="@drawable/select_red" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="结 算" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

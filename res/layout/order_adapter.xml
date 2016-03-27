@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+	
+    <TextView
+        android:id="@+id/tv_order_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="SO-20100605-00001"
+        android:textSize="15sp"
+         />
+    
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_toRightOf="@id/tv_order_code"
+        android:text="待付款"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:gravity="right"
+        />
+    
+   
+
+	<TextView
+        android:id="@+id/tv_order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_code"
+        android:text="2015-10-01 10:11:12"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:gravity="left"
+        />
+	
+	<TextView
+        android:id="@+id/tv_order_amt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_code"
+        android:layout_toRightOf="@id/tv_order_date"
+        android:text="1000元"
+        android:padding="0.0dip"
+        android:gravity="right"
+        />
+	
+	 <TextView
+        android:id="@+id/tv_order_vip_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_date"
+        android:text="13456789352"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:gravity="left"
+        />
+    
+
+</RelativeLayout>

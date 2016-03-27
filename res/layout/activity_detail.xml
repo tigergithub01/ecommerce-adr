@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_vertical" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_webview_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_sheet_detail_web_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="@string/detail_url_hit"
+            android:inputType="textUri"
+            android:textColor="@color/white" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_sheet_detail_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/et_sheet_detail_web_url"
+            android:text="@string/detail_enter_text"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pgb_webview_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/rl_webview_toolbar" />
+
+    <WebView
+        android:id="@+id/wbv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pgb_webview_loading" />
+
+</RelativeLayout>

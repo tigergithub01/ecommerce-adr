@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#aa000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff0f8ff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <TextView android:textColor="#ff333333" android:gravity="bottom|left|center" android:id="@id/share_tv" android:background="#fff0f8ff" android:paddingLeft="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/shareto" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="top|center" android:orientation="horizontal" android:background="#fff0f8ff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/qq_share_iv" android:background="@drawable/qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4.0" />
+                <TextView android:textColor="#ff333333" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qqfriend" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/addregisterweixin" android:background="@drawable/weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4.0" />
+                <TextView android:textColor="#ff333333" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weixinfriend" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/addregistersms" android:background="@drawable/duanxin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4.0" />
+                <TextView android:textColor="#ff333333" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/shoujiduanxin" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pengyouquan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/addregisterfriend" android:background="@drawable/pyq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4.0" />
+                <TextView android:textColor="#ff333333" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pengyouquan" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

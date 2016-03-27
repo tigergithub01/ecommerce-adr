@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff6766</color>
+    <color name="blue">#ff375bf1</color>
+    <color name="yellow">#fff7d23e</color>
+    <color name="green">#ff34a350</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="press_no">#00000000</color>
+    <color name="press">#fff7efc8</color>
+    <color name="supplier_show">#ffff6666</color>
+    <color name="supplier_not_show">#ffb3b3b4</color>
+    <color name="no_data">#ffb5b5b6</color>
+    <color name="bisque">#ffff3000</color>
+    <color name="light_blue">#ff00cccc</color>
+    <color name="bg">#ffefeff4</color>
+    <color name="tip">#00000000</color>
+    <color name="top_bg">#ffcc3333</color>
+    <color name="tab_bg">#ffefeff4</color>
+    <color name="main_bg">#ff0d3e2e</color>
+    <color name="app_bg">#fff0f0f0</color>
+    <color name="text_hint">#ffd0d0d5</color>
+    <color name="text">#ff333333</color>
+    <color name="text_shop_name">#ff79797d</color>
+    <color name="line_bg">#ffe7e7ea</color>
+    <color name="desktop_line">#ffe3dbb0</color>
+    <color name="ss">#ff101010</color>
+    <color name="popwindowitem_color">#fff3f1ef</color>
+    <color name="popcolor">#a0000000</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="edit">#ffc8c7cc</color>
+    <color name="delete">#ffff6666</color>
+    <color name="share">#ffffcc33</color>
+    <color name="greystyle">#fff3f1ef</color>
+    <color name="listcolortime">#ffb4b3b2</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#fff4f4f4</color>
+    <color name="nav_tab_selected">#ff3070c3</color>
+    <color name="nav_tab">#ff666666</color>
+    
+    <!-- top bar background -->
+    <color name="top_bar_bg">#F08300</color>
+    
+    
+    <!-- zxing start -->
+    <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="share_view">#ffffffff</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <!-- 
+  <color name="transparent">#00000000</color>
+   -->
+  <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <!-- zxing end -->
+  
+  <!-- my income summary color -->
+  <color name="my_inc_summary_color">#ff79797d</color>
+  
+  <!-- list view item selector color -->
+  <color name="item_pressed">#FFF799</color>
+  <color name="item_normal">#00000000</color>
+  
+  <!-- wx pay -->
+  <color name="navpage">#FFE1E8EB</color>
+</resources>

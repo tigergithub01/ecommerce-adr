@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_withdraw_cash_amount"
+                android:layout_width="220.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edit_press"
+                android:ems="8"
+                android:hint="@string/withdraw_cash_amount_hint"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="#ff333333" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/withdraw_cash_unit"
+                android:textColor="#ff000000"
+                android:textSize="22.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.0dip"
+            android:text="@string/withdraw_cash_notify_label"
+            android:textSize="20.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_cash_max_amount_label"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_cash_max_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/red"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_cash_unit"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_withdraw_cash_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/common_btn"
+            android:gravity="center"
+            android:text="@string/withdraw_cash_submit"
+            android:textColor="@color/white"
+            android:textSize="20.0sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

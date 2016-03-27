@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- <string name="app_name">TEST</string> -->
+    <!-- <string name="app_name">智富坊_alfa</string> -->
+    <string name="app_name">合智付超市</string>
+
+    <!-- pullToRefresh start -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新…</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开后加载</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">加载中…</string>
+    <!-- pullToRefresh end -->
+
+
+    <!-- no more data -->
+    <string name="pull_to_refresh_no_more_date_label">没有更多可以加载的数据</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_xxmain">XXMainActivity</string>
+    <string name="title_activity_ssmain">SSMainActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_login">登陆</string>
+    <string name="title_activity_my_income">我的收入</string>
+
+    <!-- vip share activity -->
+    <string name="title_activity_vip_share">我要赚钱</string>
+    <string name="vip_share_title">合智付超市</string>
+    <string name="vip_share_content">邀请您一起来免费赚钱！只要分享发展新的会员，就能赚钱！</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="title_activity_order_list">订单管理</string>
+    <string name="title_activity_personal">个人中心</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_modify_password">修改密码</string>
+
+    <!-- activity my info -->
+    <string name="title_activity_my_info">我的资料</string>
+    <string name="my_info_submit">提交</string>
+    <string name="title_activity_my_info_bank_card">银行卡信息</string>
+    <string name="title_activity_my_qrcode">我的二维码</string>
+    <string name="title_activity_feedback">意见反馈</string>
+
+    <!-- activity about us -->
+    <string name="title_activity_about_us">联系我们</string>
+    <string name="about_us_rights">copyright@2015深圳智富坊实业有限公司版权所有</string>
+    <string name="about_us_contact_info">客服电话：0755-27829599</string>
+    <string name="upgrade_version_tip">版本升级</string>
+    <string name="upgrade_version_now">立即升级</string>
+    <string name="upgrade_version_later">以后再说</string>
+    <string name="exit_confirm_msg">是否退出系统?</string>
+    <string name="exit_title">退出系统</string>
+    <string name="exit_ok">退出</string>
+    <string name="exit_cancel">取消</string>
+    <string name="title_activity_product_list">产品列表</string>
+    <string name="label_welcome_rights">Copyright@2015深圳智富坊实业有限公司 版权所有</string>
+
+    <!-- error notification -->
+    <string name="err_get_data">获取数据出错</string>
+
+    <!-- top header -->
+    <string name="header_bar_left_button_text">左边</string>
+    <string name="header_bar_title_text">标题</string>
+    <string name="header_bar_right_button_text">右边</string>
+
+    <!-- main activity -->
+    <string name="main_left_button_text">消息</string>
+
+    <!-- personal activity menu -->
+    <string name="personal_menu_upgrade">版本更新</string>
+    <string name="personal_menu_user_guild">操作手册</string>
+    <string name="personal_menu_sale_agreement">禁售协议</string>
+    <string name="personal_menu_register_agreement">注册使用权</string>
+    <string name="personal_menu_logout">退出账号</string>
+    <string name="personal_menu_login">登录</string>
+    <string name="personal_menu_register">注册账号 ></string>
+
+    <!-- login activity -->
+    <string name="login_phone_hint_text">请输入手机号</string>
+    <string name="login_pwd_hint_text">请输入密码</string>
+    <string name="login_auto_login_text">自动登录</string>
+    <string name="login_forgot_pwd_text">忘记密码</string>
+    <string name="login_login_text">登录</string>
+    <string name="login_register_text">立即注册新账号 ></string>
+
+    <!-- register activity -->
+    <string name="register_phone_hint_text">请输入手机号</string>
+    <string name="register_vfcode_hint_text">输入验证码</string>
+    <string name="register_vfcode_get_text">获取验证码</string>
+    <string name="register_pwd_hint_text">请设置6-16位密码</string>
+    <string name="register_recommend_hint_text">请输入推荐人手机号</string>
+    <string name="register_register_text">注   册</string>
+
+    <!-- modify password  activity -->
+    <string name="modify_pwd_phone_hint_text">请输入手机号</string>
+    <string name="modify_pwd_vfcode_hint_text">输入验证码</string>
+    <string name="modify_pwd_vfcode_get_text">获取验证码</string>
+    <string name="modify_pwd_pwd_hint_text">请设置6-16位密码</string>
+    <string name="modify_pwd_confirm_text">完   成</string>
+
+    <!-- my info activity -->
+    <string name="myinfo_phone_label">账  号</string>
+    <string name="myinfo_phone_hint_text">请输入手机号</string>
+    <string name="myinfo_username_label">姓  名</string>
+    <string name="myinfo_username_hint_text">最多5个汉字</string>
+    <string name="myinfo_email_label">安全邮箱</string>
+    <string name="myinfo_email_hint_text">用于银行卡等重要资料更新</string>
+    <string name="myinfo_id_cardno_label">身份证</string>
+    <string name="myinfo_id_cardno_hint_text">输入您的18位身份证号码</string>
+    <string name="myinfo_bankcard_info_label">银行卡</string>
+
+    <!-- my info bank card activity -->
+    <string name="myinfo_bankcard_no_label">银行卡号</string>
+    <string name="myinfo_bankcard_name_label">所属银行</string>
+    <string name="myinfo_bankcard_branch_name_label">支        行</string>
+    <string name="myinfo_bankcard_address_label">开  户  地</string>
+    <string name="myinfo_bankcard_no_hint_text">请输入银行卡号(15位以上)</string>
+    <string name="myinfo_bankcard_branch_hint_text">所属支行,如:南头支行</string>
+    <string name="myinfo_bankcard_address_hint_text">开户所在地，如:广东省深圳市</string>
+
+    <!-- product list activity -->
+    <string name="product_list_search_hint_text">产品名称</string>
+    <string name="product_list_default_category_text">全部分类</string>
+    <string name="product_list_default_sort_text">默认排序</string>
+
+    <!-- vip share activity -->
+    <string name="vip_share_recommend_vip">发展会员</string>
+    <string name="vip_share_recommend_product">推荐产品</string>
+
+    <!-- my income -->
+    <string name="my_inc_balance_text">可结算金额</string>
+    <string name="my_inc_total_text">累计收入</string>
+    <string name="my_inc_total_detail_text">累计收入</string>
+    <string name="my_inc_detail_text">详情</string>
+    <string name="my_inc_balance_detail_text">分润可结算金额</string>
+    <string name="my_inc_balance_can_withdraw_text">分润可提现金额</string>
+    <string name="my_inc_settle_text">提现</string>
+    <string name="my_inc_bill_list">我的账单</string>
+
+    <!-- withdraw_cash activity -->
+    <string name="title_activity_withdraw_cash">提现申请</string>
+    <string name="withdraw_cash_submit">提交</string>
+    <string name="withdraw_cash_amount_hint">提现金额必须大于等于50</string>
+    <string name="withdraw_cash_unit">元</string>
+    <string name="withdraw_cash_notify_label">温馨提示</string>
+    <string name="withdraw_cash_max_amount_label">最大可提现金额</string>
+
+    <!-- my income detail activity -->
+    <string name="title_activity_my_inc_detail">收入明细</string>
+
+    <!-- my income bill activity -->
+    <string name="title_activity_my_inc_bill">账单信息</string>
+
+    <!-- my income bill detail activity -->
+    <string name="title_activity_my_inc_bill_detail">提现明细</string>
+
+    <!-- my group activity -->
+    <string name="title_activity_my_group">我的团队</string>
+    <string name="my_group_direct_vip_count">直接团员</string>
+    <string name="my_group_indirect_vip_count">间接团员</string>
+    <string name="my_group_all_vip_count">团员合计</string>
+
+    <!-- order guide activity -->
+    <string name="title_activity_order_guide">我的订单</string>
+    <string name="order_guide_personal">个人订单</string>
+    <string name="order_guide_group">团队订单</string>
+
+    <!-- share popupwindow -->
+    <string name="shareto">分享到</string>
+    <string name="qqfriend">QQ</string>
+    <string name="weixinfriend">微信好友</string>
+    <string name="shoujiduanxin">手机短信</string>
+    <string name="pengyouquan">朋友圈</string>
+
+    <!-- message activity -->
+    <string name="title_activity_message">消息中心</string>
+
+    <!-- activity ProductTypeActivity -->
+    <string name="title_activity_product_type">产品分类</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- activity product detail -->
+    <string name="title_activity_product_detail">产品详细信息</string>
+
+    <!-- common -->
+    <string name="common_dialog_title">提示</string>
+    <string name="common_dialog_confirm">确定</string>
+    <string name="common_dialog_cancel">取消</string>
+    <string name="common_loading_data_text">数据加载中...</string>
+    <string name="common_processing_data_text">处理中...</string>
+    <string name="common_no_data_notify_text">暂无数据,点击刷新</string>
+
+    <!-- detail activity -->
+    <string name="title_activity_detail">详细信息</string>
+    <string name="detail_url_hit">请输入网址</string>
+    <string name="detail_enter_text">确认</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_tip">提示</string>
+
+    <!-- MessageDetailActivity -->
+    <string name="title_activity_message_detail">消息详细信息</string>
+    <string name="title_activity_earn_guild_detail">详细信息</string>
+
+    <!-- //￥ -->
+    <string name="common_symbol_rmb">￥</string>
+
+    <!-- activity_host -->
+    <string name="title_activity_host">导航页</string>
+    <string name="title_activity_host_homepage">首页</string>
+    <string name="title_activity_host_product">购买</string>
+    <string name="title_activity_host_share">推荐</string>
+    <string name="title_activity_host_personal">我的</string>
+    
+    <!-- activity main tab -->
+    <string name="title_activity_main_tab">首页</string>
+    <string name="main_pull_to_refresh_no_more_date_label">更多产品请到购买页面查看</string>
+    
+    <!-- WXPayEntryActivity -->
+	<string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+	<string name="pay_wx_result_success">支付成功</string>
+	<string name="pay_wx_result_failed">支付失败</string>
+	<string name="pay_wx_result_cancel">取消支付</string>
+	<string name="title_activity_pay_wx">微信支付</string>
+	<string name="pay_wx_result">支付结果</string>
+	
+	<!-- PayActivity -->
+	<string name="pay_by_wx_title">通过微信支付</string>
+	<string name="unifiedorder_v3_wx">APP支付生成预支付订单</string>
+	<string name="pay__pre_by_wxap">生成APP微信支付参数</string>
+	<string name="pay_by_wxap">调起微信支付</string>
+	<string name="app_tip">提示</string>
+	<string name="getting_prepayid">正在获取预支付订单...</string>
+	<string name="pay_processing">处理中...</string>
+	
+	
+	
+	
+
+</resources>
